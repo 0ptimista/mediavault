@@ -1,0 +1,28 @@
+{
+  "房租": {
+    "prefix": "rent_example",
+    "body": [
+      "${1:日期} * \"${2:房屋地址}\" \"${3:N}月房租\" ",
+      "note: ${4}",
+      "    Expenses:Apartment:Rent                                         1680.00 CNY",
+      "    Expenses:Apartment:Water                                        ${5} CNY ;水费",
+      "    Expenses:Apartment:Electricity                                  ${6} CNY ;电费",
+      "    ${7:Assets:CN:CMB:Checking}                          -${8:总支出} CNY"
+    ],
+    "description": "预定义房租postings"
+  },
+  "工资": {
+    "prefix": "salary_example",
+    "body": [
+      "${1:日期} * \"${2:公司名称}\" \"${3:N}月工资\" ",
+      "    Income:CN:COMPANY:Salary                                        -12000.00 CNY",
+      "    Expenses:CN:GOV:住房公积金                                         600.00 CNY",
+      "    Expenses:CN:GOV:Tax                                                ${4} CNY",
+      "    Expenses:CN:GOV:社保:养老保险                                        768.00 CNY",
+      "    Expenses:CN:GOV:社保:医疗保险                                        192.00 CNY",
+      "    Expenses:CN:GOV:社保:失业保险                                        7.08 CNY",
+      "    Assets:CN:CMB:Checking"
+    ],
+    "description": "预定义工资postings"
+  }
+}
