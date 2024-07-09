@@ -17,11 +17,11 @@
       "${1:日期} * \"${2:公司名称}\" \"${3:N}月工资\" ",
       "    Income:CN:COMPANY:Salary                                        -12000.00 CNY",
       "    Expenses:CN:GOV:住房公积金                                         600.00 CNY",
-      "    Expenses:CN:GOV:Tax                                                ${4} CNY",
-      "    Expenses:CN:GOV:社保:养老保险                                        768.00 CNY",
-      "    Expenses:CN:GOV:社保:医疗保险                                        192.00 CNY",
+      "    Expenses:CN:GOV:Tax                                       ${4:个人所得税} CNY",
+      "    Expenses:CN:GOV:社保:养老保险                                       768.00 CNY",
+      "    Expenses:CN:GOV:社保:医疗保险                                       192.00 CNY",
       "    Expenses:CN:GOV:社保:失业保险                                        7.08 CNY",
-      "    Assets:CN:CMB:Checking"
+      "    Assets:CN:CMB:Checking                                         ${5:税后收入}"
     ],
     "description": "预定义工资postings"
   }
